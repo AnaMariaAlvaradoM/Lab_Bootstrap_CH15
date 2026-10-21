@@ -1,29 +1,124 @@
-<!--
-============================================================
-Página CONTACTO Y PEDIDOS · Sabores de la Plaza
-Ejercicios 01, 02, 06, 07 y 08
-============================================================
-Escribe tu HTML DEBAJO de este comentario.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Sabores de la Plaza</title>
 
-Ejercicios 01 y 02 · Igual que en index.html
-  - Bootstrap instalado y la MISMA barra de navegación.
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
 
-Ejercicio 06 · El formulario
-  - Campos: nombre (type="text"), teléfono o correo (type="tel" o
-    type="email"), un <select> con al menos 3 puestos y un
-    <textarea> para el mensaje.
-  - Cada campo con su <label for="..."> igual a su id.
-  - Clases de Bootstrap: form-control (form-select en el select).
-  - Un <button type="submit"> con btn y un color (btn-primary…).
-  - Centrado y sin ocupar todo el ancho en pantalla grande:
-    la fila con justify-content-center y la columna menor a 12.
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg bg-primary sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sabores de la Plaza</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="puestos.html">Puestos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-Ejercicio 07 · Más componentes de la documentación
-  - Preguntas frecuentes (Components → Accordion), al menos 3.
-  - Y uno de estos dos: un modal (Components → Modal) o unas
-    pestañas (Components → Navs and tabs). Aquí o en otra página.
+  <header class="hero text-center py-4">
+    <div class="container">
+      <h1 class="fw-bold">Haz tu pedido</h1>
+      <p class="mb-0">Déjanos tus datos y te escribimos para confirmar.</p>
+    </div>
+  </header>
 
-Ejercicio 08 · La letra
-  - El mismo <link> de Google Fonts que en index.html.
-============================================================
--->
+  <main class="container py-5">
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-6">
+
+        <form action="#" method="post">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="300 123 4567" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="puesto" class="form-label">Puesto</label>
+            <select class="form-select" id="puesto" name="puesto" required>
+              <option value="" selected disabled>Elige un puesto</option>
+              <option value="frutas">Frutería Doña Rosa</option>
+              <option value="panaderia">Panadería El Trigal</option>
+              <option value="almuerzos">Almuerzos Donde Marta</option>
+              <option value="jugos">Jugos La Naranja</option>
+              <option value="cafe">Café Don Pedro</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Enviar pedido</button>
+        </form>
+
+        <div class="text-center mt-4">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalHorarios">
+            Ver horarios de atención
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Ventana emergente de horarios -->
+  <div class="modal fade" id="modalHorarios" tabindex="-1" aria-labelledby="tituloHorarios" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="tituloHorarios">Horarios de atención</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-1">Lunes a sábado: 6:00 a. m. a 2:00 p. m.</p>
+          <p class="mb-0">Domingos: solo almuerzos y café, de 8:00 a. m. a 1:00 p. m.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">Sabores de la Plaza</p>
+      <p class="mb-1">Plaza de mercado central · Carrera 5 # 10-20</p>
+      <p class="mb-1">Lunes a sábado de 6:00 a. m. a 2:00 p. m.</p>
+      <p class="mb-0">Pedidos: pedidos@saboresdelaplaza.co · 300 123 4567</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

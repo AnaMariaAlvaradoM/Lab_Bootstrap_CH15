@@ -1,19 +1,91 @@
-/*
-============================================================
-Ejercicio 08 · La identidad visual de Sabores de la Plaza
-============================================================
-El cliente pidió "nuestros propios colores, no el azul de todos
-los sitios" y "una letra que se sienta cálida".
-Escribe tu CSS DEBAJO de este comentario.
+/* Identidad visual de Sabores de la Plaza */
 
-  - En :root, cambia --bs-primary y --bs-primary-rgb por tu color
-    principal (el mismo color: uno en hexadecimal y otro en números).
-  - En :root, cambia --bs-body-font-family por la fuente que traes
-    de Google Fonts (el mismo nombre que va en el <link>).
-  - Una regla para .btn-primary que cambie --bs-btn-bg (y si
-    quieres, --bs-btn-border-color y --bs-btn-hover-bg).
+:root {
+  --bs-primary: #b84a1b;
+  --bs-primary-rgb: 184, 74, 27;
+  --bs-link-color: #b84a1b;
+  --bs-link-color-rgb: 184, 74, 27;
+  --bs-link-hover-color: #8f3912;
+  --bs-link-hover-color-rgb: 143, 57, 18;
+  --bs-body-bg: #fff8ef;
+  --bs-body-bg-rgb: 255, 248, 239;
+  --bs-body-color: #3b2a20;
+  --bs-body-color-rgb: 59, 42, 32;
+  --bs-body-font-family: "Nunito", sans-serif;
+}
 
-Recuerda: este archivo se enlaza DESPUÉS de Bootstrap.
-La paleta es tuya: colores cálidos de plaza de mercado.
-============================================================
-*/
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Botones */
+.btn-primary {
+  --bs-btn-bg: #b84a1b;
+  --bs-btn-border-color: #b84a1b;
+  --bs-btn-hover-bg: #9a3d14;
+  --bs-btn-hover-border-color: #8f3912;
+  --bs-btn-active-bg: #8f3912;
+  --bs-btn-active-border-color: #823310;
+  --bs-btn-disabled-bg: #b84a1b;
+  --bs-btn-disabled-border-color: #b84a1b;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #b84a1b;
+  --bs-btn-border-color: #b84a1b;
+  --bs-btn-hover-bg: #b84a1b;
+  --bs-btn-hover-border-color: #b84a1b;
+  --bs-btn-active-bg: #8f3912;
+  --bs-btn-active-border-color: #8f3912;
+}
+
+/* Banner */
+.hero {
+  background-color: #f7e1cc;
+  color: #3b2a20;
+}
+
+/* Bloques de la página de inicio */
+.bloque {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(59, 42, 32, 0.1);
+  height: 100%;
+}
+
+/* Carrusel y acordeón */
+.galeria {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  height: 380px;
+  object-fit: cover;
+}
+
+.accordion {
+  --bs-accordion-active-bg: #f7e1cc;
+  --bs-accordion-active-color: #8f3912;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(184, 74, 27, 0.25);
+}
+
+/* Tarjetas */
+.card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(59, 42, 32, 0.1);
+}
+
+/* Lista de categorías */
+.list-group-item-action:hover {
+  background-color: #f7e1cc;
+  color: #8f3912;
+}
+
+/* Formulario */
+.form-control:focus,
+.form-select:focus {
+  border-color: #b84a1b;
+  box-shadow: 0 0 0 0.25rem rgba(184, 74, 27, 0.25);
+}
