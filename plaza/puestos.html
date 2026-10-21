@@ -28,3 +28,172 @@ Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
 -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores de la Plaza y barrio - Puestos</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Sabores de la Plaza</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="puestos.html">Puestos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light py-4 text-center border-bottom">
+        <div class="container">
+            <h1 class="fw-bold text-primary">Nuestros Puestos bellos y hermosos Productos</h1>
+            <p class="text-muted mb-0">Explora la variedad de nuestra plaza de mercado</p>
+        </div>
+    </header>
+
+    <!-- catalogo -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Columna Lateral Angosta -->
+            <div class="col-lg-3 mb-4">
+                <h3 class="h5 fw-bold mb-3">Categorías</h3>
+                <div class="list-group shadow-sm">
+                    <a href="#" class="list-group-item list-group-item-action active">Frutas</a>
+                    <a href="#" class="list-group-item list-group-item-action">Panadería</a>
+                    <a href="#" class="list-group-item list-group-item-action">Almuerzos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Jugos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Café</a>
+                </div>
+            </div>
+
+            <!-- Contenido Ancho con Tarjetas -->
+            <div class="col-lg-9">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                    <!-- Tarjeta 1 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <div class="card-body">
+                                <span class="badge bg-danger mb-2">Nuevo</span>
+                                <h3 class="card-title h5 fw-bold">Frutas Orgánicas del Campo</h3>
+                                <p class="card-text text-muted small">Surtido diario de frutas frescas cultivadas por nuestros campesinos locales sin químicos.</p>
+                            </div>
+                            <div class="card-footer bg-white border-top-0 pb-3">
+                                <button class="btn btn-primary btn-sm">Ver puesto</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-2">lo mas top</span>
+                                <h3 class="card-title h5 fw-bold">Panadería doña juanita</h3>
+                                <p class="card-text text-muted small">Panes amasados a horno de leña, con amor </p>
+                            </div>
+                            <div class="card-footer bg-white border-top-0 pb-3">
+                                <button class="btn btn-primary btn-sm">Ver puesto</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">no engordantes</span>
+                                <h3 class="card-title h5 fw-bold">Jugos Naturales de la selva amazonica </h3>
+                                <p class="card-text text-muted small">juguitos de agua y leche </p>
+                            </div>
+                            <div class="card-footer bg-white border-top-0 pb-3">
+                                <button class="btn btn-primary btn-sm">Ver puesto</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 4 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2">Especialidad</span>
+                                <h3 class="card-title h5 fw-bold">Cafécito</h3>
+                                <p class="card-text text-muted small">Granos tostados de altura con notas dulces unicos.</p>
+                            </div>
+                            <div class="card-footer bg-white border-top-0 pb-3">
+                                <button class="btn btn-primary btn-sm">Ver puesto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-5 pt-4 border-top">
+            <h2 class="h4 fw-bold mb-3 text-center">Lista de Precios fijos</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Producto</th>
+                            <th>Puesto</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Canasta de guanabana X 2kg</td>
+                            <td>Frutas y Verduras Doña Rosa</td>
+                            <td>$18.000</td>
+                        </tr>
+                        <tr>
+                            <td>panecito (Paquete x 5)</td>
+                            <td>Panadería El Horno de Leña</td>
+                            <td>$10.000</td>
+                        </tr>
+                        <tr>
+                            <td>Café juanvaldez (250g)</td>
+                            <td>Café de Origen</td>
+                            <td>$32.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1 fw-bold">Sabores de la Plaza</p>
+            <p class="text-white-50 small mb-0">Colectivo de puestos tradicionales - Mercado Central - Generation Colombia</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
