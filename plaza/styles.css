@@ -17,3 +17,84 @@ Recuerda: este archivo se enlaza DESPUÉS de Bootstrap.
 La paleta es tuya: colores cálidos de plaza de mercado.
 ============================================================
 */
+
+:root {
+  --color-principal: #633D2E;
+  --color-acento: #B96846;
+  --color-arena: #D9B88F;
+  --color-fondo: #F6EFE5;
+  --color-secundario: #626C4F;
+
+  --color-texto: #3B2A23;
+  --color-blanco: #FFFFFF;
+  --color-borde: #D9B88F;
+
+  /*pa poder cambiar el bootstrap*/
+    --bs-primary: #633D2E;
+  --bs-primary-rgb: 99, 61, 46;
+  --bs-body-font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--color-principal);
+  --bs-btn-border-color: var(--color-principal);
+  --bs-btn-hover-bg: var(--color-acento);
+}
+
+.navbar {
+background-color: var(--color-principal) !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+color: var(--color-blanco);
+}
+
+.navbar .nav-link,
+.navbar .nav-link.active {
+color: var(--color-arena);
+}
+
+h1,
+h2,
+h3 {
+color: var(--color-principal);
+}
+
+.card {
+background-color: var(--color-blanco);
+border: 1px solid var(--color-borde);
+border-radius: 8px;
+}
+
+.card .card-title {
+color: var(--color-principal);
+}
+
+.table {
+--bs-table-bg: var(--color-blanco);
+--bs-table-color: var(--color-texto);
+}
+
+.form-control,
+.form-select {
+border-color: var(--color-borde);
+}
+
+.form-control,
+.form-select {
+border-color: var(--color-acento);
+box-shadow: none;
+}
+
+
+footer {
+background-color: var(--color-principal);
+color: var(--color-blanco);
+padding: 2rem 1rem;
+text-align: center;
+}
+
+footer h2 {
+color: var(--color-arena);
+}
