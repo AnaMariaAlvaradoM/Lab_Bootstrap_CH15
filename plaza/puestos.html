@@ -28,3 +28,209 @@ Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores de la Plaza</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Sabores de la Plaza</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="puestos.html">Puestos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container py-5">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <h2>Categorías</h2>
+        <ul class="list-group">
+          <li class="list-group-item active" aria-current="true">Frutas</li>
+          <li class="list-group-item">Panadería</li>
+          <li class="list-group-item">Almuerzos</li>
+          <li class="list-group-item">Jugos naturales</li>
+          <li class="list-group-item">Café</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-8">
+        <h2>Catálogo</h2>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6">
+            <div class="card h-100">
+              <img src="img/frutas.svg" class="card-img-top" alt="Canasta de frutas">
+              <div class="card-body">
+                <h5 class="card-title">Frutas</h5>
+                <span class="badge text-bg-success">Fresco</span>
+                <p class="card-text">La mejor calidad de frutas</p>
+                <a href="#tablaPrecios" class="btn btn-primary">Compraaa</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="card h-100">
+              <img src="img/cafe.svg" class="card-img-top" alt="Taza de café">
+              <div class="card-body">
+                <h5 class="card-title">Café</h5>
+                <span class="badge text-bg-warning">Popular</span>
+                <p class="card-text">Café de especialidad</p>
+                <a href="#tablaPrecios" class="btn btn-primary">Compraaa</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="card h-100">
+              <img src="img/pan.svg" class="card-img-top" alt="Dos panes y un buñuelo">
+              <div class="card-body">
+                <span class="badge text-bg-success">Fresco</span>
+                <h5 class="card-title">Panes</h5>
+                <p class="card-text">Paaaan fresco</p>
+                <a href="#tablaPrecios" class="btn btn-primary">Compraaa</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="card h-100">
+              <img src="img/frutas.svg" class="card-img-top" alt="Plato de almuerzo casero">
+              <div class="card-body">
+                <h5 class="card-title">Almuerzos</h5>
+                <span class="badge text-bg-primary">Nuevo</span>
+                <p class="card-text">El sabor de casa</p>
+                <a href="#tablaPrecios" class="btn btn-primary">Compraaa</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="card h-100">
+              <img src="img/frutas.svg" class="card-img-top" alt="Vaso de jugo">
+              <div class="card-body">
+                <h5 class="card-title">Jugos</h5>
+                <span class="badge text-bg-warning">Sin conservantes</span>
+                <p class="card-text">Helado y refrescante</p>
+                <a href="#tablaPrecios" class="btn btn-primary">Compraaa</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12">
+        <table class="table table-striped" id="tablaPrecios">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Producto</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Fresas</td>
+              <td>Frutas</td>
+              <td>6.000</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Mango</td>
+              <td>Frutas</td>
+              <td>4.000</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Manzanas</td>
+              <td>Frutas</td>
+              <td>5.500</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Expresso</td>
+              <td>Café</td>
+              <td>2.000</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Capuccino</td>
+              <td>café</td>
+              <td>3.000</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Baggette</td>
+              <td>Panadería</td>
+              <td>2.500</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Buñuelo relleno</td>
+              <td>Panadería</td>
+              <td>2.000</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Menú ejecutivo</td>
+              <td>Almuerzos</td>
+              <td>20.000</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Bandeja</td>
+              <td>Almuerzos</td>
+              <td>15.000</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Guarapo</td>
+              <td>Jugos naturales</td>
+              <td>1.000</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>Jugo de Maracuyá</td>
+              <td>Jugos naturales</td>
+              <td>2.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
