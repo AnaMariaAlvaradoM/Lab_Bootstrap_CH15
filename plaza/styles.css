@@ -17,3 +17,21 @@ Recuerda: este archivo se enlaza DESPUÉS de Bootstrap.
 La paleta es tuya: colores cálidos de plaza de mercado.
 ============================================================
 */
+
+
+:root {
+    --bs-primary: #A84424;
+    --bs-primary-rgb: 168, 68, 36;
+    --bs-body-font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+    --bs-btn-bg: #A84424;
+    --bs-btn-border-color: #A84424;
+    --bs-btn-hover-bg: #80351D;
+    --bs-btn-hover-border-color: #80351D;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
