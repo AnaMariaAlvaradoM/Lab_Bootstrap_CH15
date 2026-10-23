@@ -28,3 +28,408 @@ Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
 -->
+
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestros puestos | Sabores de la Plaza</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-plaza">
+        <div class="container">
+
+            <a href="index.html" class="navbar-brand">
+                Sabores de la Plaza
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menú de navegación"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            href="puestos.html"
+                            class="nav-link active"
+                            aria-current="page"
+                        >
+                            Nuestros puestos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero text-center py-5">
+        <div class="container py-4">
+            <h1 class="display-5 fw-bold">
+                Nuestros puestos
+            </h1>
+
+            <p class="lead mt-3">
+                Descubre los sabores, productos y tradiciones
+                que hacen especial a nuestra plaza.
+            </p>
+
+            <a href="contacto.html" class="btn btn-primary btn-lg mt-3">
+                Haz tu pedido
+            </a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+
+        <div class="row g-4">
+
+            <aside class="col-12 col-lg-3">
+                <h2 class="h4 mb-3">Categorías</h2>
+
+                <div class="list-group">
+                    <a href="#frutas" class="list-group-item list-group-item-action">
+                        Frutas y verduras
+                    </a>
+
+                    <a href="#panaderia" class="list-group-item list-group-item-action">
+                        Panadería
+                    </a>
+
+                    <a href="#almuerzos" class="list-group-item list-group-item-action">
+                        Almuerzos
+                    </a>
+
+                    <a href="#jugos" class="list-group-item list-group-item-action">
+                        Jugos naturales
+                    </a>
+
+                    <a href="#cafe" class="list-group-item list-group-item-action">
+                        Café
+                    </a>
+                </div>
+
+                <div class="card mt-4 p-3">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">
+                            ¿Tienes un antojo?
+                        </h3>
+
+                        <p class="card-text">
+                            Escríbenos y consulta la disponibilidad
+                            de tus productos favoritos.
+                        </p>
+
+                        <a href="contacto.html" class="btn btn-primary">
+                            Contactar
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="col-12 col-lg-9">
+                <h2 class="mb-4">Conoce nuestros productos</h2>
+
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-6 col-xl-4" id="frutas">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="badge text-bg-success mb-2">
+                                    Fresco
+                                </span>
+
+                                <span class="badge text-bg-warning mb-2">
+                                    Popular
+                                </span>
+
+                                <h3 class="h5 card-title">
+                                    Frutas y verduras
+                                </h3>
+
+                                <p class="card-text">
+                                    Frutas de temporada y verduras frescas
+                                    para preparar tus recetas favoritas.
+                                </p>
+
+                                <a href="contacto.html" class="btn btn-primary">
+                                    Consultar productos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4" id="panaderia">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="badge text-bg-danger mb-2">
+                                    Nuevo
+                                </span>
+
+                                <span class="badge text-bg-success mb-2">
+                                    Artesanal
+                                </span>
+
+                                <h3 class="h5 card-title">
+                                    Panadería artesanal
+                                </h3>
+
+                                <p class="card-text">
+                                    Pan recién horneado, productos
+                                    artesanales y recetas tradicionales.
+                                </p>
+
+                                <a href="contacto.html" class="btn btn-primary">
+                                    Pedir pan
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4" id="almuerzos">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="badge text-bg-warning mb-2">
+                                    Favorito
+                                </span>
+
+                                <h3 class="h5 card-title">
+                                    Almuerzos caseros
+                                </h3>
+
+                                <p class="card-text">
+                                    Platos preparados con sabor casero,
+                                    ingredientes frescos y mucho cariño.
+                                </p>
+
+                                <a href="contacto.html" class="btn btn-primary">
+                                    Consultar menú
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4" id="jugos">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="badge text-bg-success mb-2">
+                                    Natural
+                                </span>
+
+                                <span class="badge text-bg-info mb-2">
+                                    Refrescante
+                                </span>
+
+                                <h3 class="h5 card-title">
+                                    Jugos naturales
+                                </h3>
+
+                                <p class="card-text">
+                                    Bebidas preparadas con frutas para
+                                    acompañar tus comidas y meriendas.
+                                </p>
+
+                                <a href="contacto.html" class="btn btn-primary">
+                                    Elegir mi jugo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4" id="cafe">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="badge text-bg-dark mb-2">
+                                    Tradicional
+                                </span>
+
+                                <h3 class="h5 card-title">
+                                    Café de la plaza
+                                </h3>
+
+                                <p class="card-text">
+                                    Una taza de café para disfrutar
+                                    de una pausa y compartir en comunidad.
+                                </p>
+
+                                <a href="contacto.html" class="btn btn-primary">
+                                    Pedir café
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="badge text-bg-primary mb-2">
+                                    Local
+                                </span>
+
+                                <span class="badge text-bg-success mb-2">
+                                    Sin conservantes
+                                </span>
+
+                                <h3 class="h5 card-title">
+                                    Sabores tradicionales
+                                </h3>
+
+                                <p class="card-text">
+                                    Descubre productos y preparaciones
+                                    que conservan el sabor de nuestra tradición.
+                                </p>
+
+                                <a href="contacto.html" class="btn btn-primary">
+                                    Más información
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">
+            Algunos de nuestros precios
+        </h2>
+
+        <p class="text-center mb-4">
+            Consulta estos precios de ejemplo. Pueden variar según
+            el puesto y la disponibilidad.
+        </p>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-bordered align-middle">
+
+                <thead class="table-success">
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Precio de ejemplo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Manzana</td>
+                        <td>Frutas</td>
+                        <td>$2.000 / unidad</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pan artesanal</td>
+                        <td>Panadería</td>
+                        <td>$3.000 / unidad</td>
+                    </tr>
+
+                    <tr>
+                        <td>Almuerzo del día</td>
+                        <td>Almuerzos</td>
+                        <td>$15.000 / plato</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jugo natural</td>
+                        <td>Jugos</td>
+                        <td>$5.000 / vaso</td>
+                    </tr>
+
+                    <tr>
+                        <td>Café negro</td>
+                        <td>Café</td>
+                        <td>$3.000 / taza</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <p class="text-muted small">
+            Nota: los precios son ilustrativos y deben actualizarse
+            con los valores reales de los comerciantes.
+        </p>
+    </section>
+
+    <section class="text-center py-5 bg-light">
+        <div class="container">
+            <h2>¿Listo para disfrutar nuestros sabores?</h2>
+
+            <p>
+                Ponte en contacto con nuestros comerciantes
+                y consulta tus productos favoritos.
+            </p>
+
+            <a href="contacto.html" class="btn btn-primary btn-lg">
+                Contactar y hacer un pedido
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer-plaza text-center py-4">
+        <div class="container">
+            <p class="mb-1 fw-semibold">
+                Sabores de la Plaza
+            </p>
+
+            <p class="mb-1">
+                Un colectivo de comerciantes locales.
+            </p>
+
+            <p class="mb-0">
+                &copy; 2026 Sabores de la Plaza.
+                Todos los derechos reservados.
+            </p>
+
+            <a href="index.html" class="link-light">
+                Volver al inicio
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
