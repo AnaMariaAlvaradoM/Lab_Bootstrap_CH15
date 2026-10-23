@@ -17,3 +17,70 @@ Recuerda: este archivo se enlaza DESPUÉS de Bootstrap.
 La paleta es tuya: colores cálidos de plaza de mercado.
 ============================================================
 */
+
+:root {
+    --bs-primary: #B85C38;
+    --bs-primary-rgb: 184, 92, 56;
+
+    --bs-body-font-family: 'Poppins', sans-serif;
+
+    --bs-body-bg: #FFF8F0;
+    --bs-body-color: #49352A;
+
+    --color-verde: #557A46;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: #91452B;
+    --bs-btn-hover-border-color: #91452B;
+    --bs-btn-active-bg: #803C26;
+    --bs-btn-active-border-color: #803C26;
+}
+
+body {
+    font-family: var(--bs-body-font-family);
+}
+
+.hero {
+    background-color: #F6E7D8;
+    color: #49352A;
+}
+
+.navbar-plaza {
+    background-color: var(--color-verde);
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.footer-plaza {
+    background-color: var(--color-verde);
+    color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
