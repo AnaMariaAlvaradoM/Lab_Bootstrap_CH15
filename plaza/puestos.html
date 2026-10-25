@@ -28,3 +28,198 @@ Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
 -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sabores de la Plaza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-cup-hot-fill"></i> Sabores de la Plaza
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="puestos.html">Puestos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+  <!--Catálogo: lateral de categorías + tarjetas-->
+  <section id="catalogo" class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">Nuestros puestos</h1>
+      <div class="row g-4">
+
+        <!--Lateral angosto: categorías-->
+        <aside class="col-12 col-lg-3">
+          <h2 class="h5 mb-3">Categorías</h2>
+          <div class="list-group">
+            <a href="#catalogo" class="list-group-item list-group-item-action active" aria-current="true">Frutas</a>
+            <a href="#catalogo" class="list-group-item list-group-item-action">Panadería</a>
+            <a href="#catalogo" class="list-group-item list-group-item-action">Almuerzos</a>
+            <a href="#catalogo" class="list-group-item list-group-item-action">Jugos</a>
+            <a href="#catalogo" class="list-group-item list-group-item-action">Café</a>
+          </div>
+        </aside>
+
+        <!--Contenido ancho: tarjetas-->
+        <div class="col-12 col-lg-9">
+          <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-basket2-fill fs-1 text-primary"></i>
+                  <h3 class="card-title h5 mt-3">Frutas y verduras</h3>
+                  <span class="badge text-bg-success mb-2">Nuevo</span>
+                  <p class="card-text">Fruta de temporada que llega cada mañana a la plaza.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="contacto.html" class="btn btn-primary">Hacer pedido</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-cake2-fill fs-1 text-primary"></i>
+                  <h3 class="card-title h5 mt-3">Panadería</h3>
+                  <span class="badge text-bg-warning mb-2">Popular</span>
+                  <p class="card-text">Pan artesanal horneado cada día, caliente y recién salido.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="contacto.html" class="btn btn-primary">Hacer pedido</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-egg-fried fs-1 text-primary"></i>
+                  <h3 class="card-title h5 mt-3">Almuerzos</h3>
+                  <span class="badge text-bg-danger mb-2">Hecho al momento</span>
+                  <p class="card-text">Almuerzo corriente con sazón casera, para comer en la plaza o llevar.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="contacto.html" class="btn btn-primary">Hacer pedido</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-cup-straw fs-1 text-primary"></i>
+                  <h3 class="card-title h5 mt-3">Jugos naturales</h3>
+                  <span class="badge text-bg-info mb-2">Sin conservantes</span>
+                  <p class="card-text">Jugos de fruta exprimidos al instante, sin conservantes.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="contacto.html" class="btn btn-primary">Hacer pedido</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-cup-hot-fill fs-1 text-primary"></i>
+                  <h3 class="card-title h5 mt-3">Café</h3>
+                  <span class="badge text-bg-secondary mb-2">De la región</span>
+                  <p class="card-text">Tinto y café especial para acompañar la charla en la plaza.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="contacto.html" class="btn btn-primary">Hacer pedido</a>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--Tabla de precios-->
+  <section id="precios" class="pb-5">
+    <div class="container">
+      <h2 class="mb-3">Precios de referencia</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle">
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Puesto</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mango (kilo)</td>
+              <td>Frutas</td>
+              <td>$4.500</td>
+            </tr>
+            <tr>
+              <td>Pan artesanal (unidad)</td>
+              <td>Panadería</td>
+              <td>$1.200</td>
+            </tr>
+            <tr>
+              <td>Almuerzo corriente</td>
+              <td>Almuerzos</td>
+              <td>$14.000</td>
+            </tr>
+            <tr>
+              <td>Jugo natural (vaso)</td>
+              <td>Jugos</td>
+              <td>$5.000</td>
+            </tr>
+            <tr>
+              <td>Tinto</td>
+              <td>Café</td>
+              <td>$2.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  </main>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">© 2026 Sabores de la Plaza · Plaza de mercado, Fusagasugá<br>Lunes a domingo, 6:00 a. m. a 4:00 p. m.</p>
+        <div class="fs-4">
+            <a href="#" class="link-light me-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="link-light" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
