@@ -17,3 +17,32 @@ Recuerda: este archivo se enlaza DESPUÉS de Bootstrap.
 La paleta es tuya: colores cálidos de plaza de mercado.
 ============================================================
 */
+
+:root {
+  /* Color principal cálido de plaza (terracota / naranja artesanal) */
+  --bs-primary: #6c1ed9;
+  --bs-primary-rgb: 108, 30, 217;
+
+  /* Fuente cálida de Google Fonts */
+  --bs-body-font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+}
+
+/* Botones principales */
+.btn-primary {
+  --bs-btn-bg: #6c1ed9;
+  --bs-btn-border-color: #6c1ed9;
+  --bs-btn-hover-bg: #6c1ed9;
+  --bs-btn-hover-border-color: #6c1ed9;
+  --bs-btn-active-bg: #6c1ed9;
+  --bs-btn-active-border-color: #6c1ed9;
+  background-color: #6c1ed9;
+  border-color: #6c1ed9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
