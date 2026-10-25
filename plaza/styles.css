@@ -17,3 +17,47 @@ Recuerda: este archivo se enlaza DESPUÉS de Bootstrap.
 La paleta es tuya: colores cálidos de plaza de mercado.
 ============================================================
 */
+
+/* Color principal: naranja terracota (#D9531E = rgb 217, 83, 30).
+   Es el MISMO color escrito de dos formas: hexadecimal y en números. */
+:root {
+  --bs-primary: #D9531E;
+  --bs-primary-rgb: 217, 83, 30;
+
+  /* Fuente cálida de Google Fonts: debe llamarse igual que en el <link> */
+  --bs-body-font-family: 'Poppins', sans-serif;
+}
+
+/* Botones .btn-primary con nuestro color (Bootstrap usa variables --bs-btn-...) */
+.btn-primary {
+  --bs-btn-bg: #D9531E;
+  --bs-btn-border-color: #D9531E;
+  --bs-btn-hover-bg: #B8430F;
+  --bs-btn-hover-border-color: #B8430F;
+  --bs-btn-active-bg: #9E390C;
+  --bs-btn-active-border-color: #9E390C;
+  --bs-btn-disabled-bg: #D9531E;
+  --bs-btn-disabled-border-color: #D9531E;
+}
+
+/* Banner de bienvenida: usa el color principal */
+.hero {
+  background-color: var(--bs-primary);
+  color: white;
+  padding: 80px 0;
+}
+
+/* Flechas del carrusel: círculo oscuro detrás para que se vean
+   aunque la foto sea clara (la flecha de Bootstrap es blanca) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 50%;
+  padding: 1.4rem;
+  background-size: 50%;
+}
+
+/* Puntitos de abajo: también con borde oscuro para que se noten */
+.carousel-indicators [data-bs-target] {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
