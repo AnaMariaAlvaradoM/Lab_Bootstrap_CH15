@@ -27,3 +27,316 @@ Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores de la Plaza</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="index.html">
+        Sabores de la Plaza
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-3 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" aria-current="page" href="index.html">
+              Inicio
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="puestos.html">Puestos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="formulario" class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+
+        <div class="card shadow-sm border-success rounded-4">
+          <div class="card-body p-4 p-md-5">
+
+            <h2 class="text-center fw-bold text-success mb-2">
+              Contacto y pedidos
+            </h2>
+
+            <p class="text-center text-secondary mb-4">
+              ¿Tienes alguna pregunta o deseas realizar un pedido?
+              Escríbenos.
+            </p>
+
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label fw-semibold">
+                  Nombre completo
+                </label>
+
+                <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Escribe tu nombre"
+                  required>
+              </div>
+
+              <div class="mb-3">
+                <label for="correo" class="form-label fw-semibold">
+                  Correo electrónico
+                </label>
+
+                <input id="correo" name="correo" type="email" class="form-control" placeholder="ejemplo@correo.com"
+                  required>
+              </div>
+
+              <div class="mb-3">
+                <label for="opcion" class="form-label fw-semibold">
+                  ¿En qué podemos ayudarte?
+                </label>
+
+                <select id="opcion" name="opcion" class="form-select" required>
+                  <option value="" selected disabled>
+                    Selecciona una opción
+                  </option>
+                  <option value="mayorista">
+                    Ventas al por mayor
+                  </option>
+                  <option value="eventos">
+                    Eventos
+                  </option>
+                  <option value="opiniones">
+                    Opiniones y sugerencias
+                  </option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label for="mensaje" class="form-label fw-semibold">
+                  Mensaje
+                </label>
+
+                <textarea id="mensaje" name="mensaje" class="form-control" rows="4"
+                  placeholder="Escribe tu mensaje aquí..." required></textarea>
+              </div>
+
+              <div class="text-center">
+                <button id="botonContacto" type="submit" class="btn btn-success px-5 py-2 fw-semibold">
+                  Enviar mensaje
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  </form>
+
+  <section id="PreguntasFrecuentes" class="container py-5">
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9">
+
+        <div class="text-center mb-4">
+          <h2 class="fw-bold text-success mb-2">
+            Preguntas frecuentes
+          </h2>
+
+          <p class="text-secondary mb-0">
+            Resolvemos tus dudas para que disfrutes
+            de todo lo que ofrece nuestra plaza.
+          </p>
+        </div>
+
+        <div class="card border-success rounded-4 shadow-sm">
+          <div class="card-body p-3 p-md-4">
+
+            <div class="accordion" id="accordionPreguntas">
+
+              <!-- Pregunta 1 -->
+              <div class="accordion-item border-success rounded-3 mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button rounded-3 text-success fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#preguntaUno" aria-expanded="true"
+                    aria-controls="preguntaUno">
+                    ¿Qué productos puedo encontrar en Sabores de la Plaza?
+                  </button>
+                </h3>
+
+                <div id="preguntaUno" class="accordion-collapse collapse show" data-bs-parent="#accordionPreguntas">
+                  <div class="accordion-body text-secondary">
+                    En nuestra plaza encontrarás una gran variedad
+                    de productos frescos, como frutas, verduras,
+                    carnes, panes y otros alimentos ofrecidos por
+                    nuestros puestos locales.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pregunta 2 -->
+              <div class="accordion-item border-success rounded-3 mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed rounded-3 text-success fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#preguntaDos" aria-expanded="false"
+                    aria-controls="preguntaDos">
+                    ¿Puedo realizar compras al por mayor?
+                  </button>
+                </h3>
+
+                <div id="preguntaDos" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntas">
+                  <div class="accordion-body text-secondary">
+                    ¡Claro! Selecciona la opción «Ventas al por
+                    mayor» en nuestro formulario de contacto y
+                    cuéntanos qué productos necesitas y en qué
+                    cantidades.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pregunta 3 -->
+              <div class="accordion-item border-success rounded-3 mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed rounded-3 text-success fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#preguntaTres" aria-expanded="false"
+                    aria-controls="preguntaTres">
+                    ¿Es posible organizar eventos en la plaza?
+                  </button>
+                </h3>
+
+                <div id="preguntaTres" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntas">
+                  <div class="accordion-body text-secondary">
+                    Puedes consultarnos sobre la organización
+                    de eventos y actividades especiales mediante
+                    el formulario de contacto. Cuéntanos tu idea
+                    para conocer mejor tu solicitud.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pregunta 4 -->
+              <div class="accordion-item border-success rounded-3 mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed rounded-3 text-success fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#preguntaCuatro" aria-expanded="false"
+                    aria-controls="preguntaCuatro">
+                    ¿Cómo puedo compartir una sugerencia?
+                  </button>
+                </h3>
+
+                <div id="preguntaCuatro" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntas">
+                  <div class="accordion-body text-secondary">
+                    Nos encanta conocer las opiniones de nuestros
+                    visitantes. Selecciona «Opiniones y sugerencias»
+                    en el formulario y escríbenos tus comentarios
+                    para ayudarnos a mejorar.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pregunta 5 -->
+              <div class="accordion-item border-success rounded-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed rounded-3 text-success fw-semibold" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#preguntaCinco" aria-expanded="false"
+                    aria-controls="preguntaCinco">
+                    ¿Cómo puedo conocer los puestos disponibles?
+                  </button>
+                </h3>
+
+                <div id="preguntaCinco" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntas">
+                  <div class="accordion-body text-secondary">
+                    Visita nuestra sección «Puestos» en la barra
+                    de navegación para conocer los diferentes
+                    negocios que forman parte de Sabores de
+                    la Plaza.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <footer class="bg-dark text-white mt-3">
+    <div class="container py-4 py-lg-5">
+
+      <div class="row g-6">
+
+        <div class="col-12 col-md-6">
+          <h2 class="h5 fw-bold text-warning mb-3">
+            <i class="bi bi-basket2-fill me-2"></i>
+            Sabores de la Plaza
+          </h2>
+
+          <p class="text-white-50 mb-0">
+            Un lugar donde se encuentran los sabores, las tradiciones
+            y el trabajo de nuestros comerciantes locales.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <h2 class="h6 fw-bold mb-3">Nuestra esencia</h2>
+
+          <p class="text-white-50 mb-0">
+            Productos frescos, comercio local y preparaciones
+            hechas con dedicación.
+          </p>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="d-flex flex-column flex-md-row justify-content-between
+        align-items-md-center gap-2">
+        <p class="small text-white-50 mb-0">
+          © 2026 Sabores de la Plaza. Todos los derechos reservados.
+        </p>
+
+        <a href="contacto.html" class="link-warning link-underline-opacity-0 small">
+          Conoce más sobre nosotros
+        </a>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
