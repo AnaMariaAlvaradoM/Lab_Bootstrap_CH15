@@ -9,10 +9,10 @@ Ejercicios 01 y 02 · Igual que en index.html
   - Bootstrap instalado y la MISMA barra de navegación.
 
 Ejercicio 04 · El catálogo
-  - Una fila con dos columnas: un lateral angosto y un contenido
-    ancho que sumen 12 en pantalla grande.
-  - El lateral tiene las 5 categorías: Frutas, Panadería,
-    Almuerzos, Jugos y Café (por ejemplo, con un list-group).
+    - Una fila con dos columnas: un lateral angosto y un contenido
+      ancho que sumen 12 en pantalla grande.
+    - El lateral tiene las 5 categorías: Frutas, Panadería,
+      Almuerzos, Jugos y Café (por ejemplo, con un list-group).
   - El contenido tiene al menos 4 tarjetas (card), cada una en su
     propia columna, con card-title, card-text y un botón.
   - Todas las tarjetas de una fila miden lo mismo (h-100).
@@ -28,3 +28,852 @@ Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores de la Plaza</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="index.html">
+        Sabores de la Plaza
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-3 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" aria-current="page" href="index.html">
+              Inicio
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="puestos.html">Puestos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+<main class="container py-5">
+  <div class="row g-4">
+
+    <!-- Lateral de categorías -->
+    <aside class="col-12 col-lg-3">
+      <h2 class="h4 mb-3">Categorías</h2>
+
+      <div class="list-group">
+        <a href="#frutas" class="list-group-item list-group-item-action active" aria-current="true">Frutas</a>
+        <a href="#panaderia" class="list-group-item list-group-item-action">Panadería</a>
+        <a href="#almuerzos" class="list-group-item list-group-item-action">Almuerzos</a>
+        <a href="#jugos" class="list-group-item list-group-item-action">Jugos</a>
+        <a href="#cafe" class="list-group-item list-group-item-action">Café</a>
+      </div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <section class="col-12 col-lg-9">
+      <h1 class="mb-4">Nuestros puestos</h1>
+
+      <!-- FRUTAS -->
+      <div id="frutas" class="mb-5">
+        <h2 class="h4">Frutas</h2>
+        <p>Encuentra frutas frescas y productos de temporada directamente de nuestros comerciantes.</p>
+
+        <div class="row g-3">
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaXK-ibEi_8c7akao-tG1tuiTqg1YQk8J6uN9sNzVcAA&s=10"
+                class="card-img-top" alt="Naranjas frescas" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-success">Fresca</span>
+                  <span class="badge text-bg-warning">Cítrica</span>
+                  <span class="badge text-bg-secondary">Para jugos</span>
+                </div>
+                <h3 class="card-title h5">Naranja</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descNaranja"
+                  aria-expanded="false" aria-controls="descNaranja">
+                  Conocer fruta
+                </button>
+                <div class="collapse mt-2" id="descNaranja">
+                  <p class="card-text">Jugosa y refrescante, ideal para disfrutar en cualquier momento del día o preparar un zumo natural.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://agrichem.mx/wp-content/uploads/2018/12/Untitled-1.jpg"
+                class="card-img-top" alt="Mandarinas frescas" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-success">Fruta fresca</span>
+                  <span class="badge text-bg-warning">Dulce</span>
+                  <span class="badge text-bg-secondary">Para meriendas</span>
+                </div>
+                <h3 class="card-title h5">Mandarina</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descMandarina"
+                  aria-expanded="false" aria-controls="descMandarina">
+                  Conocer fruta
+                </button>
+                <div class="collapse mt-2" id="descMandarina">
+                  <p class="card-text">Dulce, fácil de pelar y perfecta para llevar como merienda o compartir en familia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://www.revistainternos.com.ar/v2/wp-content/uploads/2018/09/InterNos-Portada-Lechuga-Agroqu%C3%ADmicos.jpg"
+                class="card-img-top" alt="Lechuga fresca" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-success">Fresca</span>
+                  <span class="badge text-bg-primary">Para ensaladas</span>
+                  <span class="badge text-bg-secondary">Uso diario</span>
+                </div>
+                <h3 class="card-title h5">Lechuga</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descLechuga"
+                  aria-expanded="false" aria-controls="descLechuga">
+                  Conocer fruta
+                </button>
+                <div class="collapse mt-2" id="descLechuga">
+                  <p class="card-text">Una opción fresca y versátil para ensaladas, acompañamientos y comidas saludables.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-3">
+          <button type="button" class="btn btn-success"
+            data-bs-toggle="modal" data-bs-target="#modalFrutas">
+            Ver carta completa
+          </button>
+        </div>
+      </div>
+
+      <!-- PANADERÍA -->
+      <div id="panaderia" class="mb-5">
+        <h2 class="h4">Panadería</h2>
+        <p>Descubre panes artesanales y productos recién horneados.</p>
+
+        <div class="row g-3">
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://www.infobae.com/resizer/v2/3NE7GFDIVVF3BJULJ2TJCN2GNA.webp?auth=e3cb566e5b79e8e851587c731b9c6e4e34e7f34dbbee9ce6f3d038aaea74b3b9"
+                class="card-img-top" alt="Pan artesanal recién horneado" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-warning">Tradicional</span>
+                  <span class="badge text-bg-success">Para desayunos</span>
+                  <span class="badge text-bg-secondary">Panadería</span>
+                </div>
+                <h3 class="card-title h5">Pan Rollo</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descPanRollo"
+                  aria-expanded="false" aria-controls="descPanRollo">
+                  Descubrir producto
+                </button>
+                <div class="collapse mt-2" id="descPanRollo">
+                  <p class="card-text">Pan tradicional de corteza dorada y miga suave, ideal para acompañar el desayuno.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdxCiP5sadB9J2ftvEAv2eBdXFbCGXp3HWLtxxty7p1-ZNAAdFsMZpgYZS&s=10"
+                class="card-img-top" alt="Croissants de hojaldre" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-warning">Hojaldrado</span>
+                  <span class="badge text-bg-primary">Para desayunos</span>
+                  <span class="badge text-bg-secondary">Ideal con café</span>
+                </div>
+                <h3 class="card-title h5">Croissant</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descCroissant"
+                  aria-expanded="false" aria-controls="descCroissant">
+                  Descubrir producto
+                </button>
+                <div class="collapse mt-2" id="descCroissant">
+                  <p class="card-text">Hojaldre crujiente y delicado para acompañar con café, chocolate o tu bebida favorita.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa1vfCdESvTkYAt-myYV7_0xY4jfnyBQ9Xc0c39jVxGY8O-PTJ87n4-qM&s=10"
+                class="card-img-top" alt="Variedad de productos de panadería" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-warning">Tradicional</span>
+                  <span class="badge text-bg-success">Para meriendas</span>
+                  <span class="badge text-bg-secondary">Típico colombiano</span>
+                </div>
+                <h3 class="card-title h5">Almojábana</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descAlmojabana"
+                  aria-expanded="false" aria-controls="descAlmojabana">
+                  Descubrir producto
+                </button>
+                <div class="collapse mt-2" id="descAlmojabana">
+                  <p class="card-text">Un clásico de nuestra tradición, con textura suave y sabor a queso.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-3">
+          <button type="button" class="btn btn-success"
+            data-bs-toggle="modal" data-bs-target="#modalPanaderia">
+            Ver carta completa
+          </button>
+        </div>
+      </div>
+
+      <!-- ALMUERZOS -->
+      <div id="almuerzos" class="mb-5">
+        <h2 class="h4">Almuerzos</h2>
+        <p>Disfruta de preparaciones caseras llenas de sabor y tradición.</p>
+
+        <div class="row g-3">
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDPOxrKVOTiSuEj0ek5o8qT25LUfUaZJDClw_5VQDs0YI1ZnLxhYLuRtBh&s=10"
+                class="card-img-top" alt="Plato de almuerzo casero" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-primary">Plato completo</span>
+                  <span class="badge text-bg-success">Casero</span>
+                  <span class="badge text-bg-secondary">Tradicional</span>
+                </div>
+                <h3 class="card-title h5">Bandeja casera</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descBandeja"
+                  aria-expanded="false" aria-controls="descBandeja">
+                  Ver descripción
+                </button>
+                <div class="collapse mt-2" id="descBandeja">
+                  <p class="card-text">Una comida completa con arroz, proteína, ensalada y acompañamientos tradicionales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcnzqbYgi6xjDFB8xIrDfgbbyc9ujQx6UMz9xLTynSjGyIDKy2ajHM_8&s=10"
+                class="card-img-top" alt="Sopa servida en un plato" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-primary">Sopa tradicional</span>
+                  <span class="badge text-bg-success">Receta colombiana</span>
+                  <span class="badge text-bg-secondary">Plato caliente</span>
+                </div>
+                <h3 class="card-title h5">Ajiaco</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descAjiaco"
+                  aria-expanded="false" aria-controls="descAjiaco">
+                  Ver descripción
+                </button>
+                <div class="collapse mt-2" id="descAjiaco">
+                  <p class="card-text">Sopa tradicional con papas, pollo y guascas, inspirada en los sabores colombianos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://www.cocina-colombiana.com/base/stock/Recipe/sancocho-de-gallina/sancocho-de-gallina_web.jpg"
+                class="card-img-top" alt="Comida preparada al estilo casero" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-success">Preparación diaria</span>
+                  <span class="badge text-bg-warning">Caliente</span>
+                  <span class="badge text-bg-secondary">Menú del día</span>
+                </div>
+                <h3 class="card-title h5">Sopa del día</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descSopa"
+                  aria-expanded="false" aria-controls="descSopa">
+                  Ver descripción
+                </button>
+                <div class="collapse mt-2" id="descSopa">
+                  <p class="card-text">Una preparación reconfortante que acompaña tus almuerzos con el toque de la cocina de casa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-3">
+          <button type="button" class="btn btn-success"
+            data-bs-toggle="modal" data-bs-target="#modalAlmuerzos">
+            Ver carta completa
+          </button>
+        </div>
+      </div>
+
+      <!-- JUGOS -->
+      <div id="jugos" class="mb-5">
+        <h2 class="h4">Jugos</h2>
+        <p>Refréscate con bebidas preparadas con frutas llenas de sabor.</p>
+
+        <div class="row g-3">
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://alqueriauploads.s3.us-east-1.amazonaws.com/prod/bcm_mb_4d4a82e41a.webp"
+                class="card-img-top" alt="Bebida frutal refrescante" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-success">Frutal</span>
+                  <span class="badge text-bg-primary">Sabor a mora</span>
+                  <span class="badge text-bg-info">Bebida fría</span>
+                </div>
+                <h3 class="card-title h5">Jugo de mora</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descMora"
+                  aria-expanded="false" aria-controls="descMora">
+                  Conocer bebida
+                </button>
+                <div class="collapse mt-2" id="descMora">
+                  <p class="card-text">Una bebida de sabor intenso y frutal para refrescar tus días.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI3Za7knWK0Ujyqb4EL3bkWJ7370BFU8JWT4o6gkYEcSDi7Bun_1xgHx8&s=10"
+                class="card-img-top" alt="Limonada fría" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-success">Cítrica</span>
+                  <span class="badge text-bg-primary">Refrescante</span>
+                  <span class="badge text-bg-info">Con limón</span>
+                </div>
+                <h3 class="card-title h5">Limonada natural</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descLimonada"
+                  aria-expanded="false" aria-controls="descLimonada">
+                  Conocer bebida
+                </button>
+                <div class="collapse mt-2" id="descLimonada">
+                  <p class="card-text">El equilibrio entre lo cítrico y lo refrescante, ideal para acompañar tus comidas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/d080381/2147483647/strip/true/crop/920x920+460+0/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2F41%2F67%2F671ce553485794ed011230344e47%2Fjugo-mango-guayaba.jpg"
+                class="card-img-top" alt="Jugo natural de frutas" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-success">Frutal</span>
+                  <span class="badge text-bg-warning">Sabor tropical</span>
+                  <span class="badge text-bg-info">Bebida fría</span>
+                </div>
+                <h3 class="card-title h5">Jugo de mango</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descMango"
+                  aria-expanded="false" aria-controls="descMango">
+                  Conocer bebida
+                </button>
+                <div class="collapse mt-2" id="descMango">
+                  <p class="card-text">Una bebida tropical, dulce y deliciosa para disfrutar en cualquier momento.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-3">
+          <button type="button" class="btn btn-success"
+            data-bs-toggle="modal" data-bs-target="#modalJugos">
+            Ver carta completa
+          </button>
+        </div>
+      </div>
+
+      <!-- CAFÉ -->
+      <div id="cafe" class="mb-5">
+        <h2 class="h4">Café</h2>
+        <p>Haz una pausa y disfruta del aroma y sabor de un buen café.</p>
+
+        <div class="row g-3">
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top" alt="Taza de café recién preparado" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-dark">Clásico</span>
+                  <span class="badge text-bg-secondary">Caliente</span>
+                  <span class="badge text-bg-primary">A base de café</span>
+                </div>
+                <h3 class="card-title h5">Café americano</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descAmericano"
+                  aria-expanded="false" aria-controls="descAmericano">
+                  Descubrir bebida
+                </button>
+                <div class="collapse mt-2" id="descAmericano">
+                  <p class="card-text">Una taza de café de sabor equilibrado para comenzar el día o acompañar una conversación.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=600&q=80"
+                class="card-img-top" alt="Café con leche servido en una taza" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-dark">Clásico</span>
+                  <span class="badge text-bg-secondary">Con leche</span>
+                  <span class="badge text-bg-primary">Caliente</span>
+                </div>
+                <h3 class="card-title h5">Café con leche</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descCafeLeche"
+                  aria-expanded="false" aria-controls="descCafeLeche">
+                  Descubrir bebida
+                </button>
+                <div class="collapse mt-2" id="descCafeLeche">
+                  <p class="card-text">La combinación del café y la leche para una pausa cálida y reconfortante.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100">
+              <img src="https://elrinconcolombiano.com/wp-content/uploads/2024/05/Chocolate-Caliente-receta-colombiana.jpg"
+                class="card-img-top" alt="Chocolate caliente en una taza" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge text-bg-warning">Sabor a chocolate</span>
+                  <span class="badge text-bg-secondary">Caliente</span>
+                  <span class="badge text-bg-success">Para desayunos</span>
+                </div>
+                <h3 class="card-title h5">Chocolate caliente</h3>
+                <button class="btn btn-outline-success" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#descChocolate"
+                  aria-expanded="false" aria-controls="descChocolate">
+                  Descubrir bebida
+                </button>
+                <div class="collapse mt-2" id="descChocolate">
+                  <p class="card-text">Una bebida tradicional, perfecta para acompañar el pan recién horneado.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-3">
+          <button type="button" class="btn btn-success"
+            data-bs-toggle="modal" data-bs-target="#modalCafe">
+            Ver carta completa
+          </button>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+  
+  <!-- MODAL: CARTA DE FRUTAS -->
+  <div class="modal fade" id="modalFrutas" tabindex="-1" aria-labelledby="tituloModalFrutas" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="tituloModalFrutas">
+            Carta de frutas
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+
+        <div class="modal-body">
+          <p class="text-body-secondary">
+            Consulta los productos disponibles y sus precios.
+          </p>
+
+          <div class="table-responsive">
+            <table class="table table-striped table-hover">
+              <thead class="table-success">
+                <tr>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Naranja</td>
+                  <td>Fruta cítrica y jugosa</td>
+                  <td>$2.500/kg</td>
+                </tr>
+                <tr>
+                  <td>Mandarina</td>
+                  <td>Dulce y fácil de pelar</td>
+                  <td>$3.500/kg</td>
+                </tr>
+                <tr>
+                  <td>Lechuga</td>
+                  <td>Ideal para ensaladas</td>
+                  <td>$2.000/unidad</td>
+                </tr>
+                <tr>
+                  <td>Banano</td>
+                  <td>Para desayunos y meriendas</td>
+                  <td>$2.500/kg</td>
+                </tr>
+                <tr>
+                  <td>Manzana</td>
+                  <td>Fruta para disfrutar fresca</td>
+                  <td>$5.000/kg</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="small text-body-secondary mb-0">
+            Precios de ejemplo, expresados en pesos colombianos (COP).
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar carta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL: CARTA DE PANADERÍA -->
+  <div class="modal fade" id="modalPanaderia" tabindex="-1" aria-labelledby="tituloModalPanaderia" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="tituloModalPanaderia">
+            Carta de panadería
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+
+        <div class="modal-body">
+          <p class="text-body-secondary">
+            Descubre nuestros productos de panadería.
+          </p>
+
+          <div class="table-responsive">
+            <table class="table table-striped table-hover">
+              <thead class="table-success">
+                <tr>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Pan rollo</td>
+                  <td>Pan suave tradicional</td>
+                  <td>$1.000/unidad</td>
+                </tr>
+                <tr>
+                  <td>Croissant</td>
+                  <td>Hojaldre crujiente</td>
+                  <td>$3.500/unidad</td>
+                </tr>
+                <tr>
+                  <td>Almojábana</td>
+                  <td>Preparación con queso</td>
+                  <td>$2.000/unidad</td>
+                </tr>
+                <tr>
+                  <td>Pan de queso</td>
+                  <td>Panadería de sabor salado</td>
+                  <td>$2.000/unidad</td>
+                </tr>
+                <tr>
+                  <td>Mogolla</td>
+                  <td>Pan para desayunos y onces</td>
+                  <td>$1.500/unidad</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="small text-body-secondary mb-0">
+            Precios de ejemplo, expresados en pesos colombianos (COP).
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar carta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL: CARTA DE ALMUERZOS -->
+  <div class="modal fade" id="modalAlmuerzos" tabindex="-1" aria-labelledby="tituloModalAlmuerzos" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="tituloModalAlmuerzos">
+            Carta de almuerzos
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+
+        <div class="modal-body">
+          <p class="text-body-secondary">
+            Disfruta de preparaciones caseras llenas de sabor.
+          </p>
+
+          <div class="table-responsive">
+            <table class="table table-striped table-hover">
+              <thead class="table-success">
+                <tr>
+                  <th scope="col">Plato</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bandeja casera</td>
+                  <td>Proteína, arroz y acompañamientos</td>
+                  <td>$18.000</td>
+                </tr>
+                <tr>
+                  <td>Ajiaco</td>
+                  <td>Sopa con pollo, papas y guascas</td>
+                  <td>$20.000</td>
+                </tr>
+                <tr>
+                  <td>Sopa del día</td>
+                  <td>Preparación casera del día</td>
+                  <td>$8.000</td>
+                </tr>
+                <tr>
+                  <td>Menú ejecutivo</td>
+                  <td>Plato del día con acompañamientos</td>
+                  <td>$16.000</td>
+                </tr>
+                <tr>
+                  <td>Sancocho de gallina</td>
+                  <td>Sopa tradicional colombiana</td>
+                  <td>$22.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="small text-body-secondary mb-0">
+            Precios de ejemplo, expresados en pesos colombianos (COP).
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar carta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL: CARTA DE JUGOS -->
+  <div class="modal fade" id="modalJugos" tabindex="-1" aria-labelledby="tituloModalJugos" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="tituloModalJugos">
+            Carta de jugos
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+
+        <div class="modal-body">
+          <p class="text-body-secondary">
+            Encuentra bebidas frutales para refrescar tu día.
+          </p>
+
+          <div class="table-responsive">
+            <table class="table table-striped table-hover">
+              <thead class="table-success">
+                <tr>
+                  <th scope="col">Bebida</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jugo de mora</td>
+                  <td>Bebida de sabor frutal intenso</td>
+                  <td>$6.000</td>
+                </tr>
+                <tr>
+                  <td>Limonada natural</td>
+                  <td>Bebida cítrica y refrescante</td>
+                  <td>$5.000</td>
+                </tr>
+                <tr>
+                  <td>Jugo de mango</td>
+                  <td>Bebida de sabor tropical</td>
+                  <td>$6.000</td>
+                </tr>
+                <tr>
+                  <td>Jugo de guanábana</td>
+                  <td>Bebida cremosa de fruta</td>
+                  <td>$7.000</td>
+                </tr>
+                <tr>
+                  <td>Limonada de panela</td>
+                  <td>Limonada con un toque tradicional</td>
+                  <td>$5.500</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="small text-body-secondary mb-0">
+            Precios de ejemplo, expresados en pesos colombianos (COP).
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar carta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL: CARTA DE CAFÉ -->
+  <div class="modal fade" id="modalCafe" tabindex="-1" aria-labelledby="tituloModalCafe" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="tituloModalCafe">
+            Carta de café y bebidas calientes
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+
+        <div class="modal-body">
+          <p class="text-body-secondary">
+            Disfruta de nuestras bebidas para acompañar tus pausas.
+          </p>
+
+          <div class="table-responsive">
+            <table class="table table-striped table-hover">
+              <thead class="table-success">
+                <tr>
+                  <th scope="col">Bebida</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Café americano</td>
+                  <td>Café de sabor equilibrado</td>
+                  <td>$3.500</td>
+                </tr>
+                <tr>
+                  <td>Café con leche</td>
+                  <td>Café combinado con leche</td>
+                  <td>$4.500</td>
+                </tr>
+                <tr>
+                  <td>Chocolate caliente</td>
+                  <td>Bebida tradicional de chocolate</td>
+                  <td>$5.000</td>
+                </tr>
+                <tr>
+                  <td>Tinto</td>
+                  <td>Una taza de café negro</td>
+                  <td>$2.000</td>
+                </tr>
+                <tr>
+                  <td>Aguapanela caliente</td>
+                  <td>Bebida tradicional caliente</td>
+                  <td>$3.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="small text-body-secondary mb-0">
+            Precios de ejemplo, expresados en pesos colombianos (COP).
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar carta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

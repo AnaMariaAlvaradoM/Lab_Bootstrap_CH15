@@ -38,3 +38,412 @@ Ejercicio 08 · La letra (en las TRES páginas)
   - El <link> de Google Fonts con tu fuente, en el <head>.
 ============================================================
 -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores de la Plaza</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold text-success" href="index.html">
+        <i class="bi bi-basket2-fill me-2"></i>
+        Sabores de la Plaza
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir menú de navegación">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" aria-current="page" href="index.html">
+              Inicio
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="puestos.html">
+              Puestos
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">
+              Contacto
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- Bienvenida y carrusel -->
+  <section class="bienvenida container py-4 py-lg-5">
+
+    <div id="carouselSabores" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
+
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+
+        <button type="button" data-bs-target="#carouselSabores" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Bienvenida">
+        </button>
+
+        <button type="button" data-bs-target="#carouselSabores" data-bs-slide-to="1" aria-label="Frutas y verduras">
+        </button>
+
+        <button type="button" data-bs-target="#carouselSabores" data-bs-slide-to="2" aria-label="Café">
+        </button>
+
+        <button type="button" data-bs-target="#carouselSabores" data-bs-slide-to="3" aria-label="Panadería">
+        </button>
+
+      </div>
+
+
+      <!-- Contenido de las diapositivas -->
+      <div class="carousel-inner">
+
+
+        <!-- SLIDE 1: BIENVENIDA -->
+        <div class="carousel-item active" data-bs-interval="7000">
+
+          <img
+            src="https://img.asmedia.epimg.net/resizer/v2/AERQMARQFNBABKA4U5OA7IU45E.jpeg?auth=951675bb2617812cad3cee067da1ce3040d597a231603a394f1ac8cf13aeb15d&width=1472&height=828&smart=true"
+            class="d-block w-100" alt="Productos frescos y variados en una plaza de mercado">
+
+          <div class="carousel-caption d-flex flex-column justify-content-center
+            align-items-start text-start top-0 bottom-0 start-0 end-0
+            m-0 p-4 p-md-5 bg-dark bg-opacity-50">
+
+            <h1 class="display-5 fw-bold text-white mb-3">
+              ¡El sabor de lo nuestro!
+            </h1>
+
+            <p class="lead text-white mb-4">
+              Descubre los sabores, aromas y tradiciones de nuestra plaza.
+              Frutas frescas, pan artesanal, almuerzos caseros y mucho más
+              te esperan en cada puesto.
+            </p>
+
+            <a href="puestos.html" class="btn btn-success fw-semibold rounded-pill px-4 py-2">
+              Descubre nuestros puestos
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- SLIDE 2: FRUTAS Y VERDURAS -->
+        <div class="carousel-item" data-bs-interval="5000">
+
+          <img src="/plaza/img/frutas.svg" class="d-block w-100" alt="Puesto de frutas y verduras frescas">
+
+          <div class="carousel-caption d-flex flex-column justify-content-center
+            align-items-start text-start top-0 bottom-0 start-0 end-0
+            m-0 p-4 p-md-5 bg-dark bg-opacity-50">
+
+            <h2 class="display-5 fw-bold text-white mb-3">
+              Frescura en cada rincón
+            </h2>
+
+            <p class="lead text-white mb-4">
+              Conoce nuestros puestos de frutas y verduras,
+              llenos de colores, sabores y productos frescos.
+            </p>
+
+          </div>
+        </div>
+
+
+        <!-- SLIDE 3: CAFÉ -->
+        <div class="carousel-item" data-bs-interval="5000">
+
+          <img src="/plaza/img/cafe.svg" class="d-block w-100" alt="Puesto de café para disfrutar y compartir">
+
+          <div class="carousel-caption d-flex flex-column justify-content-center
+            align-items-start text-start top-0 bottom-0 start-0 end-0
+            m-0 p-4 p-md-5 bg-dark bg-opacity-50">
+
+            <h2 class="display-5 fw-bold text-white mb-3">
+              Una pausa llena de sabor
+            </h2>
+
+            <p class="lead text-white mb-4">
+              Disfruta el aroma del café y encuentra el lugar perfecto
+              para compartir una buena conversación.
+            </p>
+
+          </div>
+        </div>
+
+
+        <!-- SLIDE 4: PANADERÍA -->
+        <div class="carousel-item" data-bs-interval="5000">
+
+          <img src="/plaza/img/pan.svg" class="d-block w-100" alt="Panes frescos y productos recién horneados">
+
+          <div class="carousel-caption d-flex flex-column justify-content-center
+            align-items-start text-start top-0 bottom-0 start-0 end-0
+            m-0 p-4 p-md-5 bg-dark bg-opacity-50">
+
+            <h2 class="display-5 fw-bold text-white mb-3">
+              El aroma de lo recién horneado
+            </h2>
+
+            <p class="lead text-white mb-4">
+              Disfruta el sabor y la tradición de nuestra panadería.
+              Encuentra panes frescos, productos artesanales y delicias
+              recién horneadas para acompañar tus mejores momentos.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Control anterior -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSabores" data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+        </span>
+
+        <span class="visually-hidden">
+          Anterior
+        </span>
+      </button>
+
+
+      <!-- Control siguiente -->
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselSabores" data-bs-slide="next">
+
+        <span class="carousel-control-next-icon" aria-hidden="true">
+        </span>
+
+        <span class="visually-hidden">
+          Siguiente
+        </span>
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- Características de la plaza -->
+  <section class="container py-5">
+    <div class="row g-4">
+
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body d-flex align-items-center justify-content-center">
+            <button type="button" class="btn btn-link text-decoration-none text-success fw-bold fs-5"
+              data-bs-toggle="modal" data-bs-target="#modalFresco">
+              Fresco y natural
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body d-flex align-items-center justify-content-center">
+            <button type="button" class="btn btn-link text-decoration-none text-success fw-bold fs-5"
+              data-bs-toggle="modal" data-bs-target="#modalOrgullo">
+              Orgullo local
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body d-flex align-items-center justify-content-center">
+            <button type="button" class="btn btn-link text-decoration-none text-success fw-bold fs-5"
+              data-bs-toggle="modal" data-bs-target="#modalCarino">
+              Hecho con cariño
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="modales">
+
+    <!-- Modal: Fresco y natural -->
+    <div class="modal fade" id="modalFresco" tabindex="-1" aria-labelledby="tituloFresco" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="tituloFresco">
+              Fresco y natural
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+
+          <div class="modal-body">
+            Disfruta de frutas, verduras y productos frescos seleccionados
+            por nuestros comerciantes para llevar lo mejor del campo a tu mesa.
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Orgullo local -->
+    <div class="modal fade" id="modalOrgullo" tabindex="-1" aria-labelledby="tituloOrgullo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="tituloOrgullo">
+              Orgullo local
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+
+          <div class="modal-body">
+            Apoyamos el trabajo de los productores y comerciantes de nuestra
+            comunidad, quienes conservan las tradiciones y dan vida a la plaza.
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Hecho con cariño -->
+    <div class="modal fade" id="modalCarino" tabindex="-1" aria-labelledby="tituloCarino" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="tituloCarino">
+              Hecho con cariño
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+
+          <div class="modal-body">
+            Cada preparación y cada producto reflejan la dedicación de quienes
+            trabajan día a día para ofrecer alimentos llenos de sabor,
+            tradición y calidez.
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white mt-3">
+
+    <div class="container py-4 py-lg-5">
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6">
+
+          <h2 class="h5 fw-bold text-warning mb-3">
+            <i class="bi bi-basket2-fill me-2"></i>
+            Sabores de la Plaza
+          </h2>
+
+          <p class="text-white-50 mb-0">
+            Un lugar donde se encuentran los sabores, las tradiciones
+            y el trabajo de nuestros comerciantes locales.
+          </p>
+
+        </div>
+
+        <div class="col-12 col-md-6">
+
+          <h2 class="h6 fw-bold mb-3">
+            Nuestra esencia
+          </h2>
+
+          <p class="text-white-50 mb-0">
+            Productos frescos, comercio local y preparaciones
+            hechas con dedicación.
+          </p>
+
+        </div>
+
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="d-flex flex-column flex-md-row justify-content-between
+        align-items-md-center gap-2">
+
+        <p class="small text-white-50 mb-0">
+          © 2026 Sabores de la Plaza. Todos los derechos reservados.
+        </p>
+
+        <a href="contacto.html" class="link-warning link-underline-opacity-0 small">
+          Conoce más sobre nosotros
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
