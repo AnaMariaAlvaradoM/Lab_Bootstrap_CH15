@@ -28,3 +28,211 @@ Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
 -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores Plaza</title>
+
+  <!-- Google Fonts: Poppins (Ejercicio 08) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Ejercicio 02: Barra de navegación -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        Sabores de la Plaza
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="puestos.html">Puestos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="py-4 text-center bg-light border-bottom">
+    <div class="container">
+      <h1 class="h2 fw-bold">Puestos</h1>
+      <p class="text-secondary mb-0">Conoce nuestras tradicionales y productos</p>
+    </div>
+  </header>
+
+  <!-- Ejercicio 04: Catálogo (Lateral angosto + Contenido ancho) -->
+  <main class="container my-5">
+    <div class="row">
+      <!-- Lateral angosto (col-12 col-lg-3) con las 5 categorías -->
+      <aside class="col-12 col-lg-3 mb-4 mb-lg-0">
+        <h3 class="h5 mb-3">Categorías</h3>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Frutas y Verduras</a>
+          <a href="#" class="list-group-item list-group-item-action">Panadería Tradicional</a>
+          <a href="#" class="list-group-item list-group-item-action">Almuerzos Caseros</a>
+          <a href="#" class="list-group-item list-group-item-action">Jugos Naturales</a>
+          <a href="#" class="list-group-item list-group-item-action">Café de Origen</a>
+        </div>
+      </aside>
+
+      <!-- Contenido ancho (col-12 col-lg-9) -->
+      <section class="col-12 col-lg-9">
+        <!-- Tarjetas: 4 puestos en su propia columna -->
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge bg-success mb-2">Cosecha del Día</span>
+                <h4 class="card-title h5">Frutería El Campesino</h4>
+                <p class="card-text text-muted">Mangos tommy, moras de oriente, aguacates papelillo y hortalizas frescas traídas cada madrugada.</p>
+                <a href="contacto.html" class="btn btn-primary btn-sm">Pedir aquí</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge bg-warning text-dark mb-2">Recién Horneado</span>
+                <h4 class="card-title h5">Horno Paisa & Amasijos</h4>
+                <p class="card-text text-muted">Pan de queso trenzado, pandeyucas crocantes, arepas de chócolo y buñuelos tradicionales calientes.</p>
+                <a href="contacto.html" class="btn btn-primary btn-sm">Pedir aquí</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge bg-danger mb-2">Plato Estrella</span>
+                <h4 class="card-title h5">Fonda La Minorista</h4>
+                <p class="card-text text-muted">Cazuela montañera con chicharrón, sancocho de bagre y almuerzos criollos preparados con auténtica sazón tradicional.</p>
+                <a href="contacto.html" class="btn btn-primary btn-sm">Pedir aquí</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge bg-info text-dark mb-2">Tostión Artesanal</span>
+                <h4 class="card-title h5">Café Cumbre & Jugos</h4>
+                <p class="card-text text-muted">Café de altura del suroeste antioqueño, granizados y jugos de pura fruta natural en agua o leche.</p>
+                <a href="contacto.html" class="btn btn-primary btn-sm">Pedir aquí</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ejercicio 05: Tabla de precios -->
+        <div class="mt-5">
+          <h3 class="h4 mb-3">Precios Sugeridos</h3>
+          <div class="table-responsive">
+            <table class="table table-hover align-middle">
+              <thead class="table-light">
+                <tr>
+                  <th>Producto</th>
+                  <th>Puesto</th>
+                  <th>Precio sugerido</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Canastilla de fresas y moras silvestres</td>
+                  <td>Frutería El Campesino</td>
+                  <td>$6.500 COP</td>
+                </tr>
+                <tr>
+                  <td>Aguacate papelillo seleccionado (unidad)</td>
+                  <td>Frutería El Campesino</td>
+                  <td>$4.500 COP</td>
+                </tr>
+                <tr>
+                  <td>Arepas de chócolo con quesito (paquete x 5)</td>
+                  <td>Horno Paisa & Amasijos</td>
+                  <td>$7.000 COP</td>
+                </tr>
+                <tr>
+                  <td>Pandebono tradicional caliente (unidad)</td>
+                  <td>Horno Paisa & Amasijos</td>
+                  <td>$2.500 COP</td>
+                </tr>
+                <tr>
+                  <td>Cazuela de fríjoles con chicharrón</td>
+                  <td>Fonda La Minorista</td>
+                  <td>$18.000 COP</td>
+                </tr>
+                <tr>
+                  <td>Sancocho criollo con arroz y ensalada</td>
+                  <td>Fonda La Minorista</td>
+                  <td>$16.000 COP</td>
+                </tr>
+                <tr>
+                  <td>Jugo de maracuyá o lulo en leche (16 oz)</td>
+                  <td>Café Cumbre & Jugos</td>
+                  <td>$6.500 COP</td>
+                </tr>
+                <tr>
+                  <td>Café de origen especial molido (500g)</td>
+                  <td>Café Cumbre & Jugos</td>
+                  <td>$22.000 COP</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container text-center">
+      <div class="mb-3">
+        <h5 class="fw-bold text-white">Sabores de la Plaza</h5>
+        <p class="text-white-50 mb-1">
+          Colectivo de Comerciantes y Productores Tradicionales
+        </p>
+        <p class="text-white-50 small mb-1">
+          Calle 50 #30-20, Medellín, Antioquia
+        </p>
+        <p class="text-white-50 small mb-0">
+          Lunes a Domingo de 6:00 a.m. a 4:00 p.m. · contacto@saboresdelaplaza.co
+        </p>
+      </div>
+      <div class="border-top border-secondary pt-3 mt-4">
+        <p class="mb-0 text-white-50 small">
+          2026 Sabores de la Plaza · Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
