@@ -28,3 +28,169 @@ Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
 -->
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Nuestros puestos | Sabores de la Plaza</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Sabores de la Plaza</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menú de navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="puestos.html">Puestos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <header class="mb-4">
+        <p class="text-uppercase fw-bold text-primary mb-2">Hecho con cariño, cerca de casa</p>
+        <h1>Nuestros puestos</h1>
+        <p class="lead">Encuentra ingredientes frescos, antojos y sabores para compartir.</p>
+      </header>
+
+      <div class="row g-4">
+        <aside class="col-12 col-lg-3">
+          <h2 class="h4">Categorías</h2>
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="#frutas">Frutas</a>
+            <a class="list-group-item list-group-item-action" href="#panaderia">Panadería</a>
+            <a class="list-group-item list-group-item-action" href="#almuerzos">Almuerzos</a>
+            <a class="list-group-item list-group-item-action" href="#jugos">Jugos</a>
+            <a class="list-group-item list-group-item-action" href="#cafe">Café</a>
+          </div>
+        </aside>
+
+        <section class="col-12 col-lg-9" aria-label="Catálogo de puestos">
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-xxl-4" id="frutas">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge text-bg-success align-self-start mb-2">De temporada</span>
+                  <h2 class="card-title h5">Frutas de la huerta</h2>
+                  <p class="card-text">Mangos, guayabas y frutas frescas seleccionadas cada mañana.</p>
+                  <a class="btn btn-primary mt-auto" href="contacto.html">Hacer un pedido</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4" id="panaderia">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge text-bg-warning align-self-start mb-2">Recién hecho</span>
+                  <h2 class="card-title h5">Panadería La Espiga</h2>
+                  <p class="card-text">Pan artesanal, almojábanas y amasijos para acompañar el día.</p>
+                  <a class="btn btn-primary mt-auto" href="contacto.html">Hacer un pedido</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4" id="almuerzos">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge text-bg-danger align-self-start mb-2">Popular</span>
+                  <h2 class="card-title h5">El Sazón de la Abuela</h2>
+                  <p class="card-text">Almuerzos caseros preparados con ingredientes frescos y locales.</p>
+                  <a class="btn btn-primary mt-auto" href="contacto.html">Hacer un pedido</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4" id="jugos">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge text-bg-info align-self-start mb-2">Natural</span>
+                  <h2 class="card-title h5">Jugos La Huerta</h2>
+                  <p class="card-text">Jugos de fruta preparados al momento, sin conservantes.</p>
+                  <a class="btn btn-primary mt-auto" href="contacto.html">Hacer un pedido</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4" id="cafe">
+              <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <span class="badge text-bg-primary align-self-start mb-2">De origen local</span>
+                  <h2 class="card-title h5">Café del Patio</h2>
+                  <p class="card-text">Café colombiano recién molido para disfrutar sin afán.</p>
+                  <a class="btn btn-primary mt-auto" href="contacto.html">Hacer un pedido</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <section class="mt-5" aria-labelledby="preciosTitulo">
+            <h2 id="preciosTitulo">Precios de algunos favoritos</h2>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Puesto</th>
+                    <th scope="col">Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Jugo natural</td>
+                    <td>Jugos La Huerta</td>
+                    <td>$6.000</td>
+                  </tr>
+                  <tr>
+                    <td>Pan artesanal</td>
+                    <td>Panadería La Espiga</td>
+                    <td>$4.000</td>
+                  </tr>
+                  <tr>
+                    <td>Café colombiano</td>
+                    <td>Café del Patio</td>
+                    <td>$5.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-light py-4">
+      <div class="container text-center">
+        <p class="fw-bold mb-1">Sabores de la Plaza</p>
+        <p class="mb-0">Plaza de Mercado Central · Bogotá, Colombia · Lunes a sábado, 6:00 a. m. a 4:00 p. m.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

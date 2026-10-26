@@ -38,3 +38,143 @@ Ejercicio 08 · La letra (en las TRES páginas)
   - El <link> de Google Fonts con tu fuente, en el <head>.
 ============================================================
 -->
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Inicio | Sabores de la Plaza</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Sabores de la Plaza</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menú de navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="puestos.html">Puestos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <header class="bg-light py-5">
+        <div class="container py-4 text-center">
+          <p class="text-uppercase fw-bold text-primary mb-2">Fresco, local y hecho con cariño</p>
+          <h1 class="display-4 fw-bold">El sabor de nuestra plaza, en tu mesa</h1>
+          <p class="lead col-lg-8 mx-auto">
+            Somos los sabores de siempre y las personas que hacen especial cada visita a la plaza.
+          </p>
+          <a class="btn btn-primary btn-lg" href="puestos.html">Conoce nuestros puestos</a>
+        </div>
+      </header>
+
+      <section class="container py-5" aria-label="Lo que nos hace especiales">
+        <div class="row text-center g-4">
+          <div class="col-12 col-md-4">
+            <div class="h-100 p-4 border rounded">
+              <h2 class="h4">Del campo a tu mesa</h2>
+              <p class="mb-0">Frutas frescas y productos seleccionados cada mañana.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="h-100 p-4 border rounded">
+              <h2 class="h4">Hecho a mano</h2>
+              <p class="mb-0">Pan, café y platos preparados con dedicación por nuestros vecinos.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="h-100 p-4 border rounded">
+              <h2 class="h4">Cerca de ti</h2>
+              <p class="mb-0">Un colectivo local listo para atenderte con una sonrisa.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container pb-5" aria-labelledby="saboresTitulo">
+        <div class="text-center mb-4">
+          <h2 id="saboresTitulo">Un recorrido por nuestros sabores</h2>
+          <p>Déjate antojar y descubre lo que preparamos para ti.</p>
+        </div>
+        <div id="carruselSabores" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselSabores" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Frutas frescas"></button>
+            <button type="button" data-bs-target="#carruselSabores" data-bs-slide-to="1" aria-label="Pan artesanal"></button>
+            <button type="button" data-bs-target="#carruselSabores" data-bs-slide-to="2" aria-label="Café de la plaza"></button>
+          </div>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="img/frutas.svg" class="d-block w-100" alt="Frutas frescas de temporada de nuestros puestos" />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Frutas frescas</h3>
+                <p>Color y sabor para todos los días.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/pan.svg" class="d-block w-100" alt="Pan artesanal recién horneado en la plaza" />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Pan recién horneado</h3>
+                <p>Tradición hecha a mano en cada receta.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/cafe.svg" class="d-block w-100" alt="Una taza de café preparado en nuestro puesto" />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Café para compartir</h3>
+                <p>Una pausa cálida en medio del recorrido.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselSabores" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselSabores" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-light py-4">
+      <div class="container text-center">
+        <p class="fw-bold mb-1">Sabores de la Plaza</p>
+        <p class="mb-1">Plaza de Mercado Central · Bogotá, Colombia</p>
+        <p class="mb-0">Lunes a sábado, de 6:00 a. m. a 4:00 p. m. · pedidos@saboresdelaplaza.co</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

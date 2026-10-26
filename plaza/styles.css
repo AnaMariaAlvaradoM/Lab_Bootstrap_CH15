@@ -17,3 +17,18 @@ Recuerda: este archivo se enlaza DESPUÉS de Bootstrap.
 La paleta es tuya: colores cálidos de plaza de mercado.
 ============================================================
 */
+
+:root {
+  --bs-primary: #a8432f;
+  --bs-primary-rgb: 168, 67, 47;
+  --bs-body-font-family: "Lora", serif;
+}
+
+.btn-primary {
+  --bs-btn-bg: #a8432f;
+  --bs-btn-border-color: #a8432f;
+  --bs-btn-hover-bg: #873523;
+  --bs-btn-hover-border-color: #873523;
+  --bs-btn-active-bg: #722d1f;
+  --bs-btn-active-border-color: #722d1f;
+}
