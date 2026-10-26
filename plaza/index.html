@@ -38,3 +38,109 @@ Ejercicio 08 · La letra (en las TRES páginas)
   - El <link> de Google Fonts con tu fuente, en el <head>.
 ============================================================
 -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Sabores de la Plaza</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sabores de la Plaza</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="puestos.html">Puestos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container text-center py-5">
+      <h1 class="display-4">Bienvenidos a Sabores de la Plaza</h1>
+      <p class="lead">Descubre los mejores productos frescos y locales en nuestra plaza de mercado.</p>
+      <!-- <button class="btn btn-primary btn-lg" onclick="location.href='puestos.html'">Ver Puestos</button> -->
+      <a class="btn btn-primary btn-lg" href="puestos.html">Puestos</a>
+    </div>
+  </header>
+
+  <div class="container text-center py-5">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>fresco</h2>
+      </div>
+      <div class="col-md-4">
+        <h2>local</h2>
+      </div>
+      <div class="col-md-4">
+        <h2>hecho a mano</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Un contenedor centrado para delimitar el ancho del carrusel -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 bg-light p-1 rounded shadow">
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/cafe.svg" class="d-block w-100" alt="café">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/frutas.svg" class="d-block w-100" alt="frutas">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/pan.svg" class="d-block w-100" alt="panes">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="pie text-center py-4 bg-light">
+    <p>&copy; 2024 Sabores de la Plaza. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
