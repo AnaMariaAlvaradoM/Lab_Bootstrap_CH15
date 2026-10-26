@@ -52,10 +52,11 @@ Ejercicio 08 · La letra
       <a class="navbar-brand fw-bold" href="#inicio">
         <i class="bi bi-cup-hot-fill"></i> Sabores de la Plaza
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
         <span class="navbar-toggler-icon"></span>
       </button>
-            <div class="collapse navbar-collapse" id="menuPrincipal">
+      <div class="collapse navbar-collapse" id="menuPrincipal">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="puestos.html">Puestos</a></li>
@@ -65,8 +66,108 @@ Ejercicio 08 · La letra
     </div>
   </nav>
 
+  <main class="py-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3">
+          <ul class="list-group">
+            <li class="list-group-item">Frutas</li>
+            <li class="list-group-item">Panadería</li>
+            <li class="list-group-item">Almuerzos</li>
+            <li class="list-group-item">Jugos</li>
+            <li class="list-group-item">Café</li>
+          </ul>
+        </div>
+        <div class="col-lg-9">
+          <div class="row g-4">
+            <div class="col-12 col-lg-3">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-cup-hot fs-1 text-primary"></i>
+                  <h3 class="card-title h5 mt-3">Frutas <span class="badge text-bg-secondary">Popular</span></h3>
+                  <p class="card-text">Vendemos frutas citricas y dulces</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">$32.000</span>
+                  <a href="#contacto" class="btn btn-primary btn-sm">Pedir</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-lg-3">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-cup-hot fs-1 text-primary"></i>
+                  <h3 class="card-title h5 mt-3">Panaderia <span class="badge text-bg-secondary">Nuevo</span></h3>
+                  <p class="card-text">Panes y pasteles con ingredientes de la zona</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">$32.000</span>
+                  <a href="#contacto" class="btn btn-primary btn-sm">Pedir</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-lg-3">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-cup-hot fs-1 text-primary"></i>
+                  <h3 class="card-title h5 mt-3">Almuerzos</h3>
+                  <p class="card-text">Preparamos platos corrientes y a la carta.</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">$32.000</span>
+                  <a href="#contacto" class="btn btn-primary btn-sm">Pedir</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-lg-3">
+              <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-cup-hot fs-1 text-primary"></i>
+                  <h3 class="card-title h5 mt-3">Jugos <span class="badge text-bg-secondary">Sin conservantes</span>
+                  </h3>
+                  <p class="card-text">Tenemos a su disposición jugos saludables y de todas las frutas de la región.</p>
+                </div>
+                <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">$32.000</span>
+                  <a href="#contacto" class="btn btn-primary btn-sm">Pedir</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Producto</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Disponibilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Frutas</th>
+          <td>15.000</td>
+          <td>Lunes-Domingo, todo el día</td>
+        </tr>
+        <tr>
+          <th scope="row">Panadería</th>
+          <td>30.000</td>
+          <td>Sábado y Domingo, todo el día</td>
+        </tr>
+        <tr>
+          <th scope="row">Almuerzos</th>
+          <td>18.000</td>
+          <td>Lunes-Viernes, de 12:00 a 3:30p.m.</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
 
-  
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+
 </html>
