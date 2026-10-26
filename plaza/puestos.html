@@ -28,3 +28,171 @@ Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabores de la Plaza · Puestos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-shop-window"></i> Sabores de la plaza
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="puestos.html">Puestos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-5 fw-bold">Nuestros Puestos y Productos</h1>
+
+      <div class="row g-4">
+        <div class="col-12 col-lg-4">
+          <div class="card shadow-sm border-0 p-3 bg-white bg-opacity-75">
+            <h2 class="h5 fw-bold mb-3 text-primary">Categorías</h2>
+            <div class="list-group list-group-flush">
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">Frutas y Verduras</a>
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">Panadería y Amasijos</a>
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">Platos Típicos y Almuerzos</a>
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">Jugos Naturales</a>
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">Café de Origen</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-8">
+          <div class="row g-4">
+
+            <!-- Tarjeta 1 -->
+            <div class="col-12 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <span class="badge bg-success mb-2">Nuevo</span>
+                  <h3 class="card-title h5">Frutería Doña Rosa</h3>
+                  <p class="card-text">Frutas frescas de cosecha local seleccionadas cada mañana.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="contacto.html" class="btn btn-outline-success btn-sm w-100">Ver puesto</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col-12 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <span class="badge bg-warning text-dark mb-2">Popular</span>
+                  <h3 class="card-title h5">Panadería El Trigo</h3>
+                  <p class="card-text">Amasijos tradicionales, pan de bono y almojábanas recién horneadas.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="contacto.html" class="btn btn-outline-success btn-sm w-100">Ver puesto</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-12 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <span class="badge bg-info text-dark mb-2">Sin conservantes</span>
+                  <h3 class="card-title h5">Cocina Doña Inés</h3>
+                  <p class="card-text">Almuerzos caseros con el verdadero sazón de la plaza de mercado.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="contacto.html" class="btn btn-outline-success btn-sm w-100">Ver puesto</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="col-12 col-md-6">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <span class="badge bg-success mb-2">Recomendado</span>
+                  <h3 class="card-title h5">Jugos Naturales El Oasis</h3>
+                  <p class="card-text">Jugos en agua o leche con frutas tropicales 100% naturales.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="contacto.html" class="btn btn-outline-success btn-sm w-100">Ver puesto</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tabla de Precios -->
+      <section class="mt-5">
+        <h2 class="h4 text-center mb-4">Lista de Precios Referenciales</h2>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover bg-white rounded shadow-sm overflow-hidden">
+            <thead class="table-dark">
+              <tr>
+                <th>Puesto / Producto</th>
+                <th>Descripción</th>
+                <th>Precio aprox.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Frutería Doña Rosa</td>
+                <td>Surtido de frutas de temporada (1kg)</td>
+                <td>$ 8.000</td>
+              </tr>
+              <tr>
+                <td>Panadería El Trigo</td>
+                <td>Paquete de 5 almojábanas</td>
+                <td>$ 10.000</td>
+              </tr>
+              <tr>
+                <td>Cocina Doña Inés</td>
+                <td>Almuerzo ejecutivo del día</td>
+                <td>$ 15.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 Sabores de la Plaza. Todos los derechos reservados.</p>
+      <p class="small text-secondary mb-0">Uniendo el campo con la ciudad.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
