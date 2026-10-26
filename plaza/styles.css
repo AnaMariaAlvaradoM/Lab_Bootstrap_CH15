@@ -17,3 +17,145 @@ Recuerda: este archivo se enlaza DESPUÉS de Bootstrap.
 La paleta es tuya: colores cálidos de plaza de mercado.
 ============================================================
 */
+
+
+/* ========================================
+   PALETA DE COLORES - SABORES DE LA PLAZA
+======================================== */
+
+:root {
+  --verde-claro: #DCE8B4;
+  --verde-lima: #A7C957;
+  --verde-hoja: #6A994E;
+  --verde-bosque: #386641;
+  --cafe-tierra: #B08968;
+  --blanco: #FFFFFF;
+
+  /* Personalización de Bootstrap */
+  --bs-primary: #386641;
+  --bs-primary-rgb: 56, 102, 65;
+
+  --bs-secondary: #B08968;
+  --bs-secondary-rgb: 176, 137, 104;
+
+  --bs-body-bg: #F8FAF2;
+  --bs-body-color: #26351D;
+  --bs-body-font-family: "Merriweather", serif;
+
+  --bs-link-color: #386641;
+  --bs-link-hover-color: #6A994E;
+}
+
+/* Fondo general y textos */
+body {
+  background-color: #F8FAF2;
+  color: #26351D;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #53865d !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #FFFFFF;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #DCE8B4;
+}
+
+/* Botones principales */
+.btn-primary {
+  --bs-btn-bg: #386641;
+  --bs-btn-border-color: #386641;
+  --bs-btn-color: #FFFFFF;
+
+  --bs-btn-hover-bg: #6A994E;
+  --bs-btn-hover-border-color: #6A994E;
+  --bs-btn-hover-color: #FFFFFF;
+
+  --bs-btn-active-bg: #2D5234;
+  --bs-btn-active-border-color: #2D5234;
+}
+
+/* Botones secundarios */
+.btn-secondary {
+  --bs-btn-bg: #B08968;
+  --bs-btn-border-color: #B08968;
+  --bs-btn-color: #FFFFFF;
+
+  --bs-btn-hover-bg: #936F50;
+  --bs-btn-hover-border-color: #936F50;
+  --bs-btn-hover-color: #FFFFFF;
+}
+
+/* Enlaces */
+a {
+  color: #386641;
+}
+
+a:hover {
+  color: #6A994E;
+}
+
+/* Tarjetas de productos */
+.card {
+  border-color: #DCE8B4;
+  background-color: #FFFFFF;
+}
+
+.card-title {
+  color: #386641;
+}
+
+/* Etiquetas y badges */
+.badge {
+  background-color: #A7C957;
+  color: #26351D;
+}
+
+/* Tabla de productos y precios */
+.table thead th {
+  background-color: #386641;
+  color: #FFFFFF;
+}
+
+.table {
+  --bs-table-striped-bg: #DCE8B4;
+}
+
+/* Preguntas frecuentes */
+.accordion {
+  --bs-accordion-btn-bg: #DCE8B4;
+  --bs-accordion-btn-color: #26351D;
+  --bs-accordion-active-bg: #386641;
+  --bs-accordion-active-color: #FFFFFF;
+  --bs-accordion-border-color: #B08968;
+  --bs-accordion-btn-focus-box-shadow:
+    0 0 0 0.25rem rgba(176, 137, 104, 0.25);
+}
+
+/* Campos del formulario */
+.form-control:focus,
+.form-select:focus {
+  border-color: #6A994E;
+  box-shadow: 0 0 0 0.25rem rgba(106, 153, 78, 0.25);
+}
+
+/* Pie de página */
+footer {
+  background-color: #386641;
+  color: #FFFFFF;
+}
+
+footer a {
+  color: #DCE8B4;
+}
+
+footer a:hover {
+  color: #FFFFFF;
+}
+
